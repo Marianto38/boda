@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round");
 
 /* Importing components */
-@import url("components/card.css");
-@import url("components/navbar.css");
+/* @import url("components/card.css");
+@import url("components/navbar.css"); */
 
 /* Importing layouts */
-@import url("pages/cities.css");
+/* @import url("pages/cities.css");
 
 body {
   margin: 0;
@@ -52,4 +52,316 @@ h3 {
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+} */
+#map {
+  width: auto;
+  height : auto;
+}
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #map {
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    width: 330px;
+    height: 330px;
+  }
+    .marker {
+        display: block;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .mapboxgl-marker {
+      top: -20px;
+    }
+
+    body section {
+      /* background-color: #0d6efd;
+      height: 100vh;
+      border: 1px solid chartreuse; */
+    }
+
+    .names-nav {
+      text-align: center;
+      position: relative;
+    }
+.navbar {
+  height: 130px;
+}
+.boyfriend {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  font-size: 28px;
+  width: 200px;
+  text-align: end;
+  font-family: 'Pinyon Script', cursive;
+
+}
+.conect {
+  position: absolute;
+  top: -35px;
+  font-size: 48px;
+  left: 0px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+.girlfriend {
+  position: absolute;
+  top: 10px;
+  font-size: 28px;
+  width: 200px;
+  left: 30px;
+  text-align: start;
+  font-family: 'Pinyon Script', cursive;
+  margin-bottom: ;
+}
+.names-nav {
+  background-color: blueviolet;
+}
+.album {
+
+}
+li {
+  list-style: none;
+  display: inline;
+  align-items: center;
+}
+.hr {
+  position: absolute;
+  top: 50px;
+}
+
+.celebracion {
+
+}
+.dedicatorias {
+
+}
+
+.row-link {
+  position: absolute;
+  top: 120px;
+  display: flex;
+  align-items: center;
+
+}
+.navbar {
+  border-bottom: 1px solid black;
+  height: 120px;
+}
+
+.img-ppl {
+  height: 500px;
+  display: flex;
+  justify-content: end;
+  background-color: #ffffff;
+  position: relative;
+}
+.img-ppal img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.title-ppl {
+  position: absolute;
+  font-size: 36px;
+  left: 100px;
+  top: 100px;
+  max-width: 450px;
+  font-family: 'Calistoga', cursive;
+  font-weight: 900;
+}
+.img-date {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: bottom;
+}
+#first {
+  object-fit: cover;
+  object-position: top;
+}
+.col-day {
+  position: relative;
+}
+.day {
+  position: absolute;
+  font-size: 200px;
+  color: #ffffff;
+  bottom: 8px;
+  left: 80px;
+  font-family: 'Calistoga', cursive;
+}
+.col-month {
+  position: relative;
+}
+.month {
+  position: absolute;
+  font-size: 200px;
+  color: #ffffff;
+  bottom: 8px;
+  left: 70px;
+  font-family: 'Calistoga', cursive;
+}
+.col-year {
+  position: relative;
+}
+.year {
+  position: absolute;
+  font-size: 200px;
+  color: #ffffff;
+  bottom: 8px;
+  left: 70px;
+  font-family: 'Calistoga', cursive;
+}
+
+#heart {
+  position: relative;
+}
+#heart-2 {
+  position: relative;
+}
+
+
+.corazon {
+  animation: latido 1s infinite;
+  background-color: red;
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px;
+  top: 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  width: 50px;
+  z-index: -100;
+}
+
+.corazon:before,
+.corazon:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  z-index: 900;
+}
+
+.corazon:before {
+  top: -25px;
+  left: 0;
+}
+.posi {
+  z-index: 100;
+}
+
+.corazon:after {
+  left: 25px;
+  top: 0;
+}
+
+@keyframes latido {
+  0%
+  {
+    transform: scale( 1 )
+      rotate(-45deg);
+  }
+  20%
+  {
+    transform: scale( 1.25 )
+      rotate(-45deg);
+  }
+   40%
+  {
+    transform: scale( 1.5 )
+      rotate(-45deg);
+  }
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 600px) {
+  .album {
+    font-size: 14px;
+  }
+  .celebracion {
+    font-size: 14px;
+  }
+  .dedicatorias {
+    font-size: 14px;
+  }
+  .img-ppl {
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    background-color: #ffffff;
+  }
+  .img-ppl img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .title-ppl {
+    position: absolute;
+    font-size: 20px;
+    left: 30px;
+    top: 45px;
+    max-width: 150px;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 900;
+}
+.day {
+  position: absolute;
+  font-size: 60px;
+  color: #ffffff;
+  bottom: -7px;
+  left: 38px;
+  font-family: 'Calistoga', cursive;
+}
+.month {
+  position: absolute;
+  font-size: 60px;
+  color: #ffffff;
+  bottom: -7px;
+  left: 38px;
+  font-family: 'Calistoga', cursive;
+}
+.year {
+  position: absolute;
+  font-size: 60px;
+  color: #ffffff;
+  bottom: -7px;
+  left: 38px;
+  font-family: 'Calistoga', cursive;
+}
+
+
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body {
+  font-family: 'Indie Flower', cursive;
 }
