@@ -53,6 +53,12 @@ h3 {
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
 } */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #map {
   width: auto;
   height : auto;
@@ -294,10 +300,217 @@ li {
   }
 }
 
+.she {
+  border-radius: 50%;
+  /* border: 3px solid violet; */
+  /* box-shadow:
+  inset 0 -3em 3em rgba(231, 25, 186, 0.1),
+        0 0  0 2px rgb(203, 28, 162),
+        0.3em 0.3em 1em rgba(187, 7, 232, 0.9); */
+object-fit: cover;
+width: 150px;
+height: 150px;
+
+}
+.he {
+  border-radius: 50%;
+  /* border: 3px solid blue;
+  box-shadow:
+  inset 0 -3em 3em rgba(5, 47, 233, 0.1),
+        0 0  0 2px rgb(12, 5, 216),
+        0.3em 0.3em 1em rgba(4, 36, 198, 0.9); */
+object-fit: cover;
+width: 150px;
+height: 150px;
+}
+
+.conect2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
 
 
 
-/* MEDIA QUERY */
+
+/* *********************fotos********************* */
+
+.container-foto {
+  overflow: hidden;
+  /* display: -webkit-box; */
+  display: -ms-flexbox;
+  /* display: flex; */
+  /* background: #fcf9f9; */
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 60vh;
+}
+
+#drag-container,
+#spin-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg);
+  transform: rotateX(-10deg);
+}
+
+#drag-container img,
+#drag-container video {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 8px #fff;
+  box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover,
+#drag-container video:hover {
+  -webkit-box-shadow: 0 0 15px #fffd;
+  box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+  font-family: Serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  color: #fff;
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background: -webkit-radial-gradient(
+    center center,
+    farthest-side,
+    #9993,
+    transparent
+  );
+}
+
+#music-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spinRevert {
+  from {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@keyframes spinRevert {
+  from {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+      @keyframes octocat-wave {
+        0%,
+        100% {
+          transform: rotate(0);
+        }
+        20%,
+        60% {
+          transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+      @media (max-width: 500px) {
+        .github-corner:hover .octo-arm {
+          animation: none;
+        }
+        .github-corner .octo-arm {
+          animation: octocat-wave 560ms ease-in-out;
+        }
+      }
+
+      @font-face {
+        font-family: 'London Boutique';
+        src: url('../fonts/LondonBoutique_PERSONAL_USE_ONLY.otf') format('truetype');
+        /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+        font-family: 'London Boutique';
+        src: url('../fonts/LondonBoutique_PERSONAL_USE_ONLY.otf') format('truetype');
+        /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+
+
+
+
+      }
+
+
+      /* h3 {
+        font-family: 'London Boutique', sans-serif;
+      } */
+
+
+/*********************************************** MEDIA QUERY *************************************************/
 
 @media (max-width: 600px) {
   .album {
@@ -353,15 +566,30 @@ li {
   left: 38px;
   font-family: 'Calistoga', cursive;
 }
+.she {
+  width: 90px;
+  height: 90px;
+  font-size: 6px;
 
+}
+.he {
+
+width: 90px;
+height: 90px;
+font-size: 6px;
+}
+
+.text-votos {
+  font-size: 10px
+}
 
 
 }
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 body {
   font-family: 'Indie Flower', cursive;
-}
+} */
