@@ -34,15 +34,13 @@
         <p class="girlfriend">Luz Adriana</p>
         <!-- <a class="navbar-brand" href="#">Sticky top</a> -->
       </div>
-      <div
-        class="row justify-content-center text-center row-link align-items-center"
-      >
+      <!-- <div class="row justify-content-center text-center row-link align-items-center">
         <ul class="">
           <li class="album mx-3 mx-md-5">ALBUM</li>
           <li class="celebracion mx-3 mx-md-5">LITURGIA</li>
           <li class="dedicatorias mx-3 mx-md-5">DEDICATORIAS</li>
         </ul>
-      </div>
+      </div> -->
     </nav>
 
      <section>
@@ -79,9 +77,9 @@
     <!-- seccion fecha -->
 
     <section class="bg-dark">
-      <div class="container p-md-5 bg-light">
-        <h3 class="text-center">Separa el día!</h3>
-        <div class="row p-md-5">
+      <div class="container px-md-5 bg-light  mt-sm-3">
+        <h3 class="text-center h3-class mb-0 ">Separa el día!</h3>
+        <div class="row px-md-5">
           <div class="col col-day">
             <p class="day">22</p>
             <img class="img-date" id="first" src="./images/lu3.jpeg" alt="" />
@@ -95,8 +93,8 @@
             <img class="img-date" src="./images/lu14.jpeg" alt="" />
           </div>
         </div>
-        <p class="text-center">
-          !Es el AMOR el que hoy nos impulsa a dar el gran paso!
+        <p class="subtitulo px-5" id="subtitulo">
+          !Es el <bold>amor</bold> el que hoy nos impulsa a dar el gran paso!
         </p>
       </div>
     </section>
@@ -107,12 +105,14 @@
       <div class="container bg-light">
         <div class="row justify-content-center align-items-center p-md-3">
           <div class="col-12 col-md-6 text-center p-3">
-            <h3>Parroquia Fray Eugenio</h3>
-            <img
+            <h3 class="h3-class">Acompáñanos!</h3>
+            <p class="subtitulo">Parroquia Fray Eugenio</p>
+            <p class="subtitulo">Sábado 22 de abril a la 1:00pm</p>
+            <!-- <img
               class="d-none d-md-block"
               src="./images/iglesia-icon.png"
               alt=""
-            />
+            /> -->
           </div>
           <div class="col-12 col-md-6 text-center p-3" id="map"></div>
         </div>
@@ -120,10 +120,10 @@
     </section>
 
     <!-- Contador regresivo -->
-    <section class="counter">
-      <div class="container my-5" style="height: 200px">
+    <section class="counter" style="height: 350px">
+      <div class="container my-5" >
         <div class="row justify-content-center text-center my-md-5">
-          <h3 class="faltan">Faltan Solo...</h3>
+          <h3 class="h3-class">Faltan Solo...</h3>
           <div class="col posi" id="heart">
             <span class="ps-5 fw-bold fs-1" id="days"></span>
             <p class="ps-5">DIAS</p>
@@ -151,12 +151,12 @@
 
     <!-- ************************** votos ******************************** -->
 
-    <div class="container" style="height: 100vh">
+    <div class="container">
       <div class="row justify-content-center p-1">
         <div class="col text-center p-1">
           <img src="./images/she.png" alt="" class="she" />
           <article>
-            <p class="my-2">Futuro Esposo:</p>
+            <p class="subtitulo my-2">Futuro Esposo:</p>
             <p class="text-votos" id="votos">
               Te escojo a ti; una y otra vez al principio y al final de cada
               día. No importa la temporada no importa el año. Te escojo a ti
@@ -164,7 +164,7 @@
               cada camino que atravesaremos sabiendo que hay montañas que
               tendrémos que subir. Para estar siempre a tu lado
             </p>
-            <span class="text-votos fw-bold">Con amor tu futura esposa</span>
+            <p class="signature">Con amor tu futura esposa</p>
           </article>
         </div>
         <div class="col-1 d-flex align-items-top p-0">
@@ -173,7 +173,7 @@
         <div class="col text-center p-1">
           <img src="./images/he.png" alt="" class="he" />
           <article>
-            <p class="my-2">Futura Esposa:</p>
+            <p class="subtitulo my-2">Futura Esposa:</p>
             <p class="text-votos" id="votos">
               Estoy muy agradecido con Dios porque puso en mi camino una mujer
               buena, maravillosa, noble, con un gran corazón y estoy muy
@@ -182,27 +182,40 @@
               ti, no sé qué sería de mí amor mío. Que Dios bendiga siempre
               nuestro amor
             </p>
-            <span class="text-votos fw-bold">Con amor tu futuro esposo</span>
+            <p class="signature">Con amor tu futuro esposo</p>
           </article>
         </div>
       </div>
     </div>
 
-    <div>
-      <p id="votos">hoalaaaa</p>
-    </div>
-
     <section class="phrases"></section>
 
     <!-- ******************sección dedicatoria*********************** -->
-
-    <div class="container" style="height: 500px">
-      <h3 class="text-center mb-3">Dedicatoria para los novios</h3>
-
+    <section>
+      <div class="container" style="height: 500px">
+        <h3 class="h3-class text-center">Dedicatoria</h3>
       <!-- Formulario de contacto -->
-      <a name="contact" id="contact"></a>
-      <div class="col-md-6 px-md-5 justify-content-center">
-        <form action="https://formsubmit.co/luzayjhon@gmail.com" method="POST">
+      <!-- <a name="contact" id="contact"></a> -->
+      <div class="row px-md-5 justify-content-center">
+        <form target="_blank" action="https://formsubmit.co/luzayjhon@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://marianto38.github.io/boda/">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="De:" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Correo:" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Dedicatoria:" class="form-control" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg rounded-pill btn-success ps-5 pe-5 mb-3 mt-3 text-center"> <span class="pe-2 fs-6"> Send Message  </span> <i class="pt-1 opacity-75 fa-solid fa-paper-plane"></i> </button>
+        </form>
+        <!-- <form action="https://formsubmit.co/luzayjhon@gmail.com" method="POST">
           <input
             type="hidden"
             name="_next"
@@ -212,13 +225,7 @@
           <div class="form-group">
             <div class="form-row">
               <div class="col">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="De:"
-                  required
-                />
+                <input type="text" name="name" class="form-control" placeholder="De:" required/>
               </div>
               <div class="col">
                 <input
@@ -248,10 +255,10 @@
             <span class="pe-2 fs-6"> Enviar </span>
             <i class="pt-1 opacity-75 fa-solid fa-paper-plane"></i>
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
-
+  </section>
     <!-- fin formulario -->
     <!-- <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">De: </label>
