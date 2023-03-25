@@ -93,11 +93,6 @@ h3 {
       top: -20px;
     }
 
-    body section {
-      /* background-color: #0d6efd;
-      height: 100vh;
-      border: 1px solid chartreuse; */
-    }
 
     .names-nav {
       text-align: center;
@@ -132,14 +127,12 @@ h3 {
   left: 30px;
   text-align: start;
   font-family: 'Pinyon Script', cursive;
-  margin-bottom: ;
+  margin-bottom: 10px;
 }
 .names-nav {
   background-color: blueviolet;
 }
-.album {
 
-}
 li {
   list-style: none;
   display: inline;
@@ -148,13 +141,6 @@ li {
 .hr {
   position: absolute;
   top: 50px;
-}
-
-.celebracion {
-
-}
-.dedicatorias {
-
 }
 
 .row-link {
@@ -184,12 +170,12 @@ li {
 
 .title-ppl {
   position: absolute;
-  font-size: 36px;
+  font-size: 56px;
   left: 100px;
   top: 100px;
-  max-width: 450px;
-  font-family: 'Calistoga', cursive;
-  font-weight: 900;
+  max-width: 650px;
+  font-family: 'Mango Salsa', sans-serif;
+  /* font-weight: 900; */
 }
 .img-date {
   width: 100%;
@@ -465,48 +451,78 @@ height: 150px;
 }
 
 
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-      @keyframes octocat-wave {
-        0%,
-        100% {
-          transform: rotate(0);
-        }
-        20%,
-        60% {
-          transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-          transform: rotate(10deg);
-        }
-      }
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none;
-        }
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-      }
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
 
-      @font-face {
-        font-family: 'London Boutique';
-        src: url('../fonts/LondonBoutique_PERSONAL_USE_ONLY.otf') format('truetype');
-        /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
-        font-family: 'London Boutique';
-        src: url('../fonts/LondonBoutique_PERSONAL_USE_ONLY.otf') format('truetype');
-        /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+#votos {
+  font-size: 32px;
+  font-family: 'Always Forever' !important;
+  font-weight: 500;
+}
+.faltan {
+  font-family: 'Mango Salsa', sans-serif;
+  font-size: 80px;
+}
 
+@font-face {
+  font-family: 'London Boutique';
+  src: url('../fonts/LondonBoutique_PERSONAL_USE_ONLY.otf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+  font-family: 'Always Forever';
+  src: url('../fonts/Always\ Forever\ Bold.ttf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+  font-family: 'bremello';
+  src: url('../fonts/bromello-Regular.otf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
 
+  font-family: 'Astral Sister';
+  src: url('../fonts/Astral\ Sisters.ttf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+  font-family: 'Homework';
+  src: url('../fonts/Homework.otf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+  font-family: 'Mango Salsa';
+  src: url('../fonts/Mango\ Salsa\ -\ Personal\ Use.ttf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
+  font-family: 'Paul Signature';
+  src: url('../fonts/Paul\ Signature.ttf') format('truetype');
+  /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
 
-
-      }
+}
 
 
       /* h3 {
         font-family: 'London Boutique', sans-serif;
+        font-family: 'Always Forever', sans-serif;
+        font-family: 'bremello', sans-serif;
+        font-family: 'Astral Sister', sans-serif;
+        font-family: 'Homework', sans-serif;
+        font-family: 'Mango Salsa', sans-serif;
+        font-family: 'Paul Signature', sans-serif;
+
       } */
 
 
@@ -538,9 +554,9 @@ height: 150px;
     font-size: 20px;
     left: 30px;
     top: 45px;
-    max-width: 150px;
-    font-family: 'Pinyon Script', cursive;
-    font-weight: 900;
+    max-width: 180px;
+    font-family: 'Mango Salsa', sans-serif;
+    /* font-weight: 900; */
 }
 .day {
   position: absolute;
@@ -579,8 +595,15 @@ height: 90px;
 font-size: 6px;
 }
 
-.text-votos {
-  font-size: 10px
+#votos {
+  font-size: 16px;
+  font-family: 'Always Forever' !important;
+  font-weight: 500;
+  line-height: 1; /* Sin espacio entre líneas */
+}
+.faltan {
+  font-family: 'Mango Salsa', sans-serif;
+  font-size: 50px;
 }
 
 
