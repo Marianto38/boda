@@ -100,7 +100,10 @@ li {
 } */
 .navbar {
   border-bottom: 1px solid #A4A174;
-  height: 100px;
+  height: 120px;
+}
+.a {
+  background-image: url('../images/biblia.jpg');
 }
 
 .img-ppl {
@@ -490,7 +493,7 @@ height: 150px;
   /* Puedes cambiar el formato si la fuente descargada es en otro formato como WOFF o EOT */
   }
 @font-face {font-family: 'Paul Signature';
-  src: url('../fonts/Paul\ Signature.ttf') format('truetype'); */
+  src: url('../fonts/Paul\ Signature.ttf') format('truetype');
 }
 
 @font-face {
@@ -577,7 +580,7 @@ height: 150px;
 .day {
   position: absolute;
   font-size: 60px;
-  color: #AC7C72 !important
+  color: #ffffff;
   bottom: -7px;
   left: 38px;
   font-family: 'Calistoga', cursive;
@@ -630,6 +633,10 @@ font-size: 6px;
 .carrousel-photo {
   height: auto;
 }
+.subtitulo {
+
+  font-size: 18px;
+}
 
 }
 
@@ -662,4 +669,16 @@ body {
 }
 text-success {
   color: #13653f !important;
+}
+.bg-success {
+  background-color: #A4A174 !important;
+}
+
+.bg-md-light {
+  --bs-bg-opacity: 1;
+  background-color: #E9D7C2 !important;
+}
+.bg-sm-success {
+  --bs-bg-opacity: 1;
+  background-color: #A4A174 !important;
 }
