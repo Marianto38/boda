@@ -292,47 +292,47 @@ if (autoRotate) {
 // }
 
 // setup events
-document.onpointerdown = function (e) {
-  clearInterval(odrag.timer);
-  e = e || window.event;
-  var sX = e.clientX,
-    sY = e.clientY;
+// document.onpointerdown = function (e) {
+//   clearInterval(odrag.timer);
+//   e = e || window.event;
+//   var sX = e.clientX,
+//     sY = e.clientY;
 
-  this.onpointermove = function (e) {
-    e = e || window.event;
-    var nX = e.clientX,
-      nY = e.clientY;
-    desX = nX - sX;
-    desY = nY - sY;
-    tX += desX * 0.1;
-    tY += desY * 0.1;
-    applyTranform(odrag);
-    sX = nX;
-    sY = nY;
-  };
+//   this.onpointermove = function (e) {
+//     e = e || window.event;
+//     var nX = e.clientX,
+//       nY = e.clientY;
+//     desX = nX - sX;
+//     desY = nY - sY;
+//     tX += desX * 0.1;
+//     tY += desY * 0.1;
+//     applyTranform(odrag);
+//     sX = nX;
+//     sY = nY;
+//   };
 
-  this.onpointerup = function (e) {
-    odrag.timer = setInterval(function () {
-      desX *= 0.95;
-      desY *= 0.95;
-      tX += desX * 0.1;
-      tY += desY * 0.1;
-      applyTranform(odrag);
-      playSpin(false);
-      if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-        clearInterval(odrag.timer);
-        playSpin(true);
-      }
-    }, 17);
-    this.onpointermove = this.onpointerup = null;
-  };
+//   this.onpointerup = function (e) {
+//     odrag.timer = setInterval(function () {
+//       desX *= 0.95;
+//       desY *= 0.95;
+//       tX += desX * 0.1;
+//       tY += desY * 0.1;
+//       applyTranform(odrag);
+//       playSpin(false);
+//       if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+//         clearInterval(odrag.timer);
+//         playSpin(true);
+//       }
+//     }, 17);
+//     this.onpointermove = this.onpointerup = null;
+//   };
 
-  return false;
-};
+//   return false;
+// };
 
-document.onmousewheel = function (e) {
-  e = e || window.event;
-  var d = e.wheelDelta / 20 || -e.detail;
-  radius += d;
-  init(1);
-};
+// document.onmousewheel = function (e) {
+//   e = e || window.event;
+//   var d = e.wheelDelta / 20 || -e.detail;
+//   radius += d;
+//   init(1);
+// };
